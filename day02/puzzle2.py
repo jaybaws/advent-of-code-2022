@@ -15,3 +15,10 @@ for line in lines:
     total_score_2 += score(play, scores_by_desired_outcome)
 
 print(f"{total_score_1}, {total_score_2}")
+
+"""
+Right after completion:
+- HA! Feeling smart by pre-determining all the scores/desired actions. Should make processing fast/efficient
+Right after seeing other people's solutions:
+- Could/should have used a dict instead of tuples. Probably easier to filter later on! DANG IT!
+"""

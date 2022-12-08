@@ -39,3 +39,14 @@ print(f"""
     Visible trees: {sum([1  for y in range(height) for x in range(width) if isVisibleFromOutside(x, y, trees) ])}.
     Highest scenic score: {max([scenicScore(x, y, trees) for x in range(width) for y in range(height)])}.
 """)
+
+"""
+Right after completion:
+- Not too bad. Needed a lot of helper functions though...
+Right after seeing other people's solutions:
+- I should NumPy :D
+Learned:
+- Externalizing functions to helper.py
+- Nested for-loops in comprehension-lists
+- I should NumPy :D
+"""

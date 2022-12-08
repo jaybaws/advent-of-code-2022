@@ -40,3 +40,14 @@ def crateMover(stx, mvs):
 initial_stacks, moves = load()
 
 print(crateMover(initial_stacks, moves))
+
+"""
+Right after completion:
+- Wasn't that hard. Understoond quickly I had to reverse the popped elements.
+- Still not happy that I could not get this to work in one method (working on
+  two deep-copied sets...)
+Right after seeing other people's solutions:
+- 
+Learned:
+- 
+"""

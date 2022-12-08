@@ -43,3 +43,14 @@ for idx, line in enumerate(lines):
         group = []
 
 print(f"Answer to part 1: {total1}.\nAnswer to part 2: {total2}.")
+
+"""
+Right after completion:
+- Meh, needed more lines of code than I wanted...
+Right after seeing other people's solutions:
+- priotity() function could have been a one-liner :S
+- Too procedural, still :)
+Learned:
+- That you can return/consume multiple values from a method! sweet!
+- Looping with the element AND index! sweet!
+"""

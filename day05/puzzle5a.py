@@ -19,10 +19,8 @@ def crateMover(stx, mvs):
     stacks_9000 = stx.copy()
 
     for move in mvs:
-        items = move.split()
-        amount = int(items[1])
-        from_stack = int(items[3])
-        to_stack = int(items[5])
+        amount, from_stack,to_stack = [int(x) for x in move.split() if str.isnumeric(x)]
+
         for _ in range(amount):
             stacks_9000[to_stack - 1].append(stacks_9000[from_stack - 1].pop())
     
@@ -36,3 +34,16 @@ def crateMover(stx, mvs):
 initial_stacks, moves = load()
 
 print(crateMover(initial_stacks, moves))
+
+"""
+Right after completion:
+- MEH! Did not feel happy about pre-formatting the input and splitting it in seperate files
+- Struggled way too long with updates on (what I thought were deep copies of) sets that affected
+  the copy. Turns out (I think), I should have made deep copies of the initial_stack (line 9),
+  as those were still shared across stacks_9000 and stacks_9001... Cost me a few hours...
+Right after seeing other people's solutions:
+- Would have loved to avoid the need for arrays on elf1 and elf2
+Learned:
+- List/array split can also directly assing into pre-defined number of values! (line 7/8)
+- Happy with the comprehension-list-filtering and splitting into the right vars on line 22!
+"""
