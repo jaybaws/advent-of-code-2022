@@ -63,7 +63,9 @@ Right after completion:
 - More consise loading of the input (happy with map function)
 - Easy to make on generic function
 Right after seeing other people's solutions:
-- 
+- I - again - should learn NumPy :)
+- Could have used a dict for the move tuples
+- A lot in common (approach, algorith, var naming lol)
 Learned:
 - tuples
   - how to type-hint tuples in functions
