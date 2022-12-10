@@ -10,11 +10,8 @@ with open('input.txt', 'r') as f:
 def x_value_at(cycle: int) -> int:
     return 1 + sum([ops[i][1] for i in range(len(ops)) if sum([op[0] for op in ops[:i + 1]]) <= (cycle - 1)])
 
-def signal_strength_at(cycle: int) -> int:
-    return cycle * x_value_at(cycle)
-
 def answer1() -> int:
-    return sum(signal_strength_at(cycle) for cycle in cycles)
+    return sum(cycle * x_value_at(cycle) for cycle in cycles)
 
 def answer2() -> str:
     crt = ""
@@ -46,6 +43,6 @@ print(f"""
 # *** Learnings:
 # - creating contexts using `with`, which eases error handling and cleanup (auto closing of file handle) (line 6)
 # - nested and conditional list comprehension (line 7 and 11)
-# - conditional value assignment (var = 'someval' if (condition) else 'somethingelse') (line 23)
-# - textwrap module (line 24)
-# - joining a list of string into an uber-string (line 24)
+# - conditional value assignment (var = 'someval' if (condition) else 'somethingelse') (line 20)
+# - textwrap module (line 21)
+# - joining a list of string into an uber-string (line 21)
