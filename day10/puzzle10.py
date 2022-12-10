@@ -32,17 +32,20 @@ print(f"""
     Yay!
 """)
 
-# Right after completion:
+# *** Thoughts directly after completion:
+# - Generally really happy, although it took quite some effort (multiple hours)
 # - Felt smart about loading/coercing the input data
-#   - string-replacing the zero cost of noop into the input, before translating using a dictionary.
-# - Made a more functional approach to determining the signal strength and value of x
-#   - able to do it on one line
-# - Not really happy that I kept `ops` a global variable, but 'hey, it works!'
-# Right after seeing other people's solutions:
-# - This time, procedural might have actually been easier :-D (as proven by part 2)
-# - dictionaries
-# Learned:
-# - nested and conditional list comprehension (line 7 and 10)
-# - conditional value assignment (var = 'someval' if (condition) else 'somethingelse')
-# - textwrap module
-# - joining a list of string into an uber-string (line 27)
+#   - string-replacing the zero cost of noop into the input, before translating using a dictionary. (line 7)
+# - Made a more functional approach to determining the signal strength and value of x at a given cycle
+#   - Able to do it on one line
+# - Not really happy that I kept `ops` a global variable, but 'hey, it works!' :D
+
+# *** Thoughts after seeing other people's solutions:
+# - My sense for style sucks ;-) This time, procedural might have actually been easier :D (as proven by part 2)
+
+# *** Learnings:
+# - creating contexts using `with`, which eases error handling and cleanup (auto closing of file handle) (line 6)
+# - nested and conditional list comprehension (line 7 and 11)
+# - conditional value assignment (var = 'someval' if (condition) else 'somethingelse') (line 23)
+# - textwrap module (line 24)
+# - joining a list of string into an uber-string (line 24)
