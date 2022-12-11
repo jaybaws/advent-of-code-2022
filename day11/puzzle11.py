@@ -1,12 +1,6 @@
 import math
 
 class Monkey:
-    __items: list
-    __operation: str
-    __modulo: int
-    __recipient_true: str
-    __recipient_false: str
-    __inspections: int
 
     def __init__(self, items:list[int], operation:str, modulo:int, recipient_false:str, recipient_true:str):
         self.__items = items
